@@ -16,7 +16,7 @@ class B extends A {
     }
 }
 
-class C extends A {
+class C extends B {
     void method() {
         System.out.println("C");
     }
