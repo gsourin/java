@@ -1,11 +1,11 @@
 abstract class A {
-    A() {
+    A() {                                      //Constructor
         System.out.println("A");
     }
 
-    abstract void method();
+    abstract void method();                    //Abstract Method
 
-    void D() {
+    void D() {                                 //Non-Abstract Method
         System.out.println("D");
     }
 }

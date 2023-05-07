@@ -7,10 +7,10 @@ import java.util.*;
 public class PalindromeNumber {
     static int getpalindrome(int number){
         int sum=0;
-        while(number!=0){
-            int num=number%10;
-            sum=((sum*10)+num);
-            number=number/10;
+        while(number!=0){                       // 121!=0 True  12!=0 True   1!=0 True  0!=0 False
+            int num=number%10;                  // 121%10=1   12%10=2   1%10=1
+            sum=((sum*10)+num);                 // (0*10)+1=1  (1*10)+2=12  (12*10)+1=121
+            number=number/10;                   // 121/10=12  12/10=1  1/10=0
         }
         return sum;
     }
